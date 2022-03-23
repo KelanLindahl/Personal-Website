@@ -1,0 +1,57 @@
+@font-face {
+    font-family: bely, serif;
+    src: url(https://use.typekit.net/dlk4zzb.css);
+}
+
+h1{
+font-family: bely, serif;
+font-weight: 400;
+font-style: italic;
+
+position: absolute;
+top: 50%;
+left: 50%;
+margin-right: -50%;
+transform: translate(-50%, -50%);
+}
+
+.greetingOne{
+    font-family: bely, serif;
+    font-weight: 400;
+    font-style: italic;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.greetingTwo{
+font-family: bely, serif;
+font-weight: 400;
+font-style: italic;
+
+position: absolute;
+top: 50%;
+left: 50%;
+margin-right: -50%;
+transform: translate(-50%, -50%);
+
+}
+
+@-webkit-keyframes fadeout {
+    0% {opacity:1;}
+    100% {opacity:0;}
+}
+@keyframes fadeout {
+    0% {opacity:1;}
+    100% {opacity:0;}
+}
+.fadeOut {
+  opacity:0;
+  -moz-animation   : fadeout 1s linear;
+  -webkit-animation: fadeout 1s linear;
+  animation        : fadeout 1s linear;
+}
