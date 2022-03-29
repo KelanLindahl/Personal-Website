@@ -6,6 +6,23 @@
     --botanicalgreen:#3E5D58;
     --lightbotgreen: #92aca0;
 }
+#greetingHead{
+   text-align: center;
+   padding-bottom: 500px;
+   margin: 0;
+}
+#greeting{
+    background-image: url("images/cover.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    padding-top: 200px;
+    margin: 0;
+}
+
+#greetingParagraph{
+    text-align: center;
+}
 
 h2, h3{
     font-family: bely, serif;
@@ -22,6 +39,7 @@ h3{
 
 body{
     font-size: 18px;
+    background-color: #f8f8ff;
 }
 
 a:link{
