@@ -1,112 +1,59 @@
-@font-face {
-    font-family: bely, serif;
-    src: url(https://use.typekit.net/dlk4zzb.css);
-}
+/**https://gregives.co.uk/**/
 :root{
     --botanicalgreen:#3E5D58;
     --lightbotgreen: #92aca0;
-}
-#greetingHead{
-   text-align: center;
-   padding-bottom: 500px;
-   margin: 0;
-}
-#greeting{
-    background-image: url("images/cover.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: 50%;
-    padding-top: 200px;
-    margin: 0;
-}
-
-#greetingParagraph{
-    text-align: center;
-}
-
-h2, h3{
-    font-family: bely, serif;
-    font-weight: 800;
-}
-h2{
-    font-weight: 700px;
-    font-size: xx-large;
-    color: var(--botanicalgreen);
-}
-h3{
-    font-size: larger;
+    --blurshit: rgba(255, 255, 255, 0.9);
 }
 
 body{
-    font-size: 18px;
-    background-color: #f8f8ff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
 }
 
-a:link{
-    color: var(--botanicalgreen);
-    text-decoration: none;
+#greetingContainer{
+    margin: 150px;
 }
-#greeting{
-    text-align: center;
+p{
+    display: block;
+    inline-size: 400px;
 }
-
-.main{
-    margin-left: 200px;
-    margin-right: 200px;
-
+h1{
+    font-size: 2.5rem;
 }
-
-.titleTime{
-    display: flex;
-    justify-content: space-between;
-    text-align: right;
-}
-#skillsection ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-
-    columns: 3;
-    -webkit-columns: 3;
-    -moz-columns: 3;
-    width: 100%;
-    
+.kelan{
+   color: #3E5D58;
 }
 
-#skillsection li{
 
-    color: var(--botanicalgreen);
-    background-color:   var(--lightbotgreen);
-    border-radius: 10%;
-    font-size: 15px;
+/** Nav Formatting **/
+header{
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(0.15rem);
+    background-color: var(--blurshit);
+    margin: 0 150;
 }
 
-.sectionHead{
-    border-left: solid var(--lightbotgreen);
-    padding-left: 15px;
+ul{
+
+padding-bottom: 20px;
+text-align: right;
 }
-.skillTag{
-    margin: 2px 2px 5px 0px;
-    padding: 2px 8px;
-    display: inline-block;
-    color: var(--botanicalgreen);
-    background-color:   var(--lightbotgreen);
-    border-radius: 10%;
-    font-size: 15px;
+
+li{
+    display: inline;
+    font-size: 20px;
+}
+
+li a{
+    color: black;
+    padding: 8px;
 
 }
-/* Extra Small Devices, Phones */ 
-@media only screen and (max-width : 900px) {
-    .main{
-        margin: 0;
-    }
-   .titleTime {
-        display: block;
-        text-align: left;
-        white-space: nowrap;
-   }
-  
-  
-  }
+li a:link{
+text-decoration: none;
+}
 
-
+li a:visited{
+    color: lightblue;
+}

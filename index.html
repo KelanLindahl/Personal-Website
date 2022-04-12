@@ -1,150 +1,23 @@
-<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Kelan Lindahl</title>
-		<link rel="stylesheet" href="style/index.css">
+    <head>
+        <meta charset = "utf-8">
+        <link rel="stylesheet" href="style/reset.css">
+        <link rel="stylesheet" href="style/index.css">
 		<link rel="stylesheet" href="style/nav.css">
-	</head>
-	<body>
-		<div class="topNav">
-			<div class="navDropdown">
-				<button class="navBtn">Professional Life
-				<i class="fa fa-caret-down"></i>
-				</button>
-				<div class="dropdownItems">
-					<a href="#experience">Experience</a>
-					<a href="#skills">Skills</a>
-					<a href="#projects">Projects</a>
-					<a href="#education">Education</a>
-				</div>
-			</div>
-			<a href="about.html">Personal Life</a>
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-		</div>
-		<section id="greeting">
-			<h1 id="greetingHead">Hello! I'm Kelan.</h1>
-		</section>
-		<div>
-			<p id="greetingParagraph">
-				Thank you for visiting my website!</br>
-				I'm currently a senior at Wentworth Insitute of Technology.</br>
-				I majored in Computer Information Systems with a focus on Software Development.</br>
-				I'm looking for Front End Opportunities! My anticipated graduation date is August 2022.</br>
-				Want to learn more about my experience & who I am? Feel free to look around :)</br>
-				</p>
-		</div>
-		<div class="main">
-			<section id="experience">
-				<h2 class="sectionHead">Experience</h2>
-				<div class=titleTime>
-					<h3 class="subsectionTitle">Technology Assistant</h3>
-					<p class="experienceTime">September 2021 - Present</p>
-				</div>
-				<a href="https://www.simmons.edu/">Simmons University</a>
-				<p class="description">Work alongside the Service Desk Team in a fast-paced environment to provide support for 1,000+ students, faculty, and staff. </p>
-				<ul>
-					<li>Image and deploy Mac & Windows machines for end-user use on a daily basis.</li>
-					<li>Troubleshoot & support 1,000+ Mac, Windows, IOS, & Android devices through calls, walk-ups, and tickets.</li>
-					<li>Manage a personal Ticket Queue covering a wide variety of end-user issues.</li>
-					<li>Monitor, support, & troubleshoot 300+ classrooms, offices, and rooms.</li>
-				</ul>
-				<div class="titleTime">
-					<h3 class="subsectionTitle">Marketing Tech Ops Intern</h3>
-					<p class="experienceTime">January 2021 - August 2021</p>
-				</div>
-				<a href="https://www.5hdagency.com/">Five Horizons Digital</a>
-				
-				<p class="description">Worked with Director of Software with various tools and platforms to</p>
-				<ul>
-					<li>Facilitated data transfers between disparate software applications using automation software and custom JavaScript coding.</li>
-					<li>Leveraged competitive research tools to analyze performance and make recommendations for improved website usability and SEO performance.</li>
-					<li>Generated custom Google Analytics (GA4) Analysis Hub explorations to highlight client specific KPIs</li>
-					<li>Evaluated collaboration and productivity apps and assisted the IT team in migration from Microsoft O365 to Google Workspace.</li>
-					<li>Assisted with network and hardware installation plan for imminent office move.</li>
-				</ul>
-				<div class="titleTime">
-					<h3 class="subsectionTitle">Junior Solutions Specalist</h3>
-					<p class="experienceTime">August 2019 - June 2020</p>
-				</div>
-				<a href="https://vesttechsolutions.com/">Vest Technical Solutions</a>
-			
-				<p class="description">Worked with small team to provide support and custom solutions for clients</p>
-				<ul>
-					<li>Worked with a SchoolDude ticketing system to execute over 100+ IT Support Tickets for multiple clients.</li>
-					<li>Monitored & Supported 50+ end-user accounts & devices daily.</li>
-					<li>Executed multiple iterations of companies’ website using Squarespace, as well as providing design guidance for the company.</li>
-					<li>Worked with Power Apps to create custom internal Applications for clients.</li>
-				</ul>
-			</section>
-	
-			<section id="skills">
-				<h2 id="skillsHead" class="sectionHead">Skills</h2>
-				<div id="skillsection">
-					<ul>
-						<li>JavaScript</li>
-						<li>HTML5/CSS3</li>
-						<li>Java</li>
-						<li>Python</li>
-						<li>SQL</li>
-						<li>Git</li>
-					</ul>
-				</div>
-			</section>
-	
-			<section id="projects">
-				<h2 id="projectsHead" class="sectionHead">Projects</h2>
-				<h3 class="subsectionTitle">Moodify.site</h3>
-				<p class="description">
-					Moodify is built using Spotify's web API to dynamically generate a unique playlist for each user. Playlist generation starts with the user inputting their current mood. </br>
-					Once mood is selected, Moodify accesses the user's liked songs & creates a playlist of user's liked songs that are tagged with tags similiar to inputted mood. </br>
-					Moodify.site was created with a team of four people & served as a final project for Web Development.<a href="https://github.com/mcclaren00/Moodify">Github</a>
-				</p>
-				<div class="skillTags">
-					<div class="skillTag">JavaScript</div>
-					<div class="skillTag">HTML5</div>
-					<div class="skillTag">CSS3</div>
-					<div class="skillTag">REST API</div>
-				</div>
-				<h3 class="subsectionTitle">Storm Bot</h3>
-				<p>
-					Storm Bot is a simple discord bot written in Python that uses <a href="https://nextcord.readthedocs.io/en/stable/">Nextcord</a>. Storm Bot revolves around async/await functions to handle user commands.</br>
-					Current features include a "Guess The Artist" game, logging anytime a message is deleted/edited, coinflipping, and more. I'm currently working on a music player feature for the bot!</br>
-					Storm Bot is named after my wonderful cat, Storm! <a href="https://github.com/KelanLindahl/Storm-Bot">Github</a></br>	
-				</p>
-				<div class="skillTags">
-					<div class="skillTag">Python</div>
-				</div>
-				<h3 class="subsectionTitle">Light Skies</h3>
-				<p class="description">
-					Light Skies is a weather app written in Java based around web scrapping from weather.com, using the <a href="https://jsoup.org/">jSoup</a> library.</br>
-					The Project is currently defunct & I'm in the process of rewritting it.</br>
-					Light Skies was created on a team of three people & served as a final project for Computer Science II</br>
-				</p>
-				<div class="skillTags">
-					<div class="skillTag">Java</div>
-				</div>
-			</section>
-			
-			<section class="education">
-				<h2 id="educationHead" class="sectionHead">Education</h2>
-				<h3 class="subsectionTitle">B.S. in Computer Information Systems</h3>
-				<p class="experienceTime">September 2018 - August 2022</p>
-				<p class="description">
-					Computer Information Systems serves as a focused on both Computer Science & Business Management. As I progressed through the program, I gravitated much more towards the Computer Science side of the major.</br>
-					Eventually, I found my love for Front End Development & begin focusing on developing my skills to become an efficent Front End Developer.</br>
-				</p>
-				<div class="skillTags">
-					<div class="skillTag">Computer Science I</div>
-					<div class="skillTag">Computer Science II</div>
-					<div class="skillTag">Databases</div>
-					<div class="skillTag">Web Development</div>
-					<div class="skillTag">Security Principles</div>
-					<div class="skillTag">Applied Project Management</div>
-					<div class="skillTag">Technology Acquisition</div>
-				</div>
-			</section>
-	</div>
-	</body>
+        <title>Kelan Lindahl</title>
+    </head>
+    <body>
+        <header id="navContainer">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="professional.html">Experiences</a></li>
+                <li><a href="index.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </header>
+        <section id="greetingContainer" class="greeting">
+            <h1 class="greetingTitle">Hello! I'm <span class=kelan>Kelan.</span></h1>
+            <p id="greetingParagraph" class="greeting">Thank you for visiting my website! I'm an aspiring Frontend developer & currently a senior at Wentworth Insitute of Technology. My anticipated graduation is August 2022. Wanna learn more? Please look around!</p>
+        </section>
+    </body>
 </html>
