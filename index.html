@@ -6,30 +6,72 @@
 		<link rel="stylesheet" href="style/nav.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Kelan Lindahl</title>
+        <link rel="icon" type="image/x-icon" href="style/images/favicon.png">
     </head>
     <body>
-        <header id="navContainer">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="professional.html">Experiences</a></li>
-                <li><a href="index.html">Projects</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="https://www.linkedin.com/in/kelanlindahl/" class="fa fa-linkedin"></a></li>
-                <li><a href="https://github.com/KelanLindahl" class="fa fa-github"></a></li>
+        <header class="navContainer">
+            <ul class="navContainer">
+                <li class="navContainer"><a href="index.html">Home</a></li>
+                <li class="navContainer"><a href="#projectContainer">Projects</a></li>
+                <li class="navContainer"><a href="#experience">Experience</a></li>
+                <li class="navContainer"><a href="about.html">About</a></li>
+                <li class="navContainer"><a href="https://www.linkedin.com/in/kelanlindahl/" class="fa fa-linkedin" class="d-inline" aria-hidden="true"></a></li>
+                <li class="navContainer"><a href="https://github.com/KelanLindahl" class="fa fa-github" aria-hidden="true"></a></li>
             </ul>
         </header>
+
         <section class="main">
             <div id="greetingContainer" class="greeting">
-                <h1 class="greetingTitle">Hello! I'm <span class=kelan>Kelan.</span></h1>
+                <h1 id="greetingTitle">Hello! I'm <span class=kelan>Kelan.</span> </h1>
+                <div class="break"></div>
                 <p id="greetingParagraph" class="greeting">
                     Thank you for visiting my website!<br/> 
                     I'm currently a senior at Wentworth&nbsp;Insitute&nbsp;of&nbsp;Technology.<br/>
                     My anticipated graduation date is August 2022.<br/>
                     Wanna learn more? Please look around!<br/>
-                    <picture id="greetingPhoto">
-                        <img src="style/images/possibleweb.png" alt="Kelan Lindahl holding a goat" width="750" length="750">
-                    </picture>
                 </p>
+                <div id="photo">
+                    <img src="style/images/possibleweb.png" id="greetingPhoto" alt="Kelan Lindahl holding a goat" width="500" length="500">
+                </div>
+            </div>
+            <div class="projects" id ="projectContainer">
+                <h2 id="projectsTitle">Projects</h2>
+                <div class="project">
+                    <h3>moodify.site</h3>
+                    <p> 
+                        Moodify is built using Spotify's web API to dynamically generate a unique playlist for each user. Playlist generation starts with the user inputting their current mood.
+                        Once mood is selected, Moodify accesses the user's liked songs & creates a playlist of user's liked songs that are tagged with tags similiar to inputted mood.
+                    </p>
+                    <div class="icons">
+                        <a href="http://www.moodify.site"><i class="fa fa-rocket" aria-hidden="true"></i></a>
+                        <a href="https://github.com/Moodify-wd/Moodify"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3>kelanlindahl.com</h3>
+                    <p> 
+                        You are here! This is a personal website that I created to serve as a portfolio & personal website for all my work. I hope you enjoy your stay!
+                    </p>
+                    <div class="icons">
+                        <a href="https://www.kelanlindahl.com"><i class="fa fa-rocket" aria-hidden="true"></i></a>
+                        <a href="https://github.com/Moodify-wd/Moodify"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <h3>Storm Bot</h3>
+                    <p> 
+                        Storm Bot is a lightweight discord bot written in Python that uses <a href="https://nextcord.readthedocs.io/en/stable/">Nextcord</a>. Storm Bot revolves around async/await functions to handle user commands.
+                        Current features include a "Guess The Artist" game, logging anytime a message is deleted/edited, coinflipping, and more.
+                         I'm currently working on a music player feature for the bot!
+                        Storm Bot is named after my wonderful cat, Storm!
+                    </p>
+                    <div class="icons">
+                        <a href="https://github.com/KelanLindahl/Storm-Bot"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="experiences" id="experience">
+                <h2>Experience</h2>
             </div>
         </section>
     </body>
