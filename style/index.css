@@ -2,51 +2,64 @@
 :root{
     --botanicalgreen:#3E5D58;
     --lightbotgreen: #92aca0;
-    --blurshit: rgba(255, 255, 255, 0.9);
+    --blurshift: rgba(156, 175, 136, 0.9);
 }
 
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
+    background-color: #fefeff;
+}
+
+.main{
+padding-top: 7.5rem;
+padding-bottom: 4.5rem;
 }
 
 #greetingContainer{
-    margin: 150px;
+    margin-left: 150px;
 }
 p{
-    display: block;
-    inline-size: 400px;
+    font-size: 1.5rem;
 }
+
 h1{
-    font-size: 2.5rem;
+    font-size: 4.5rem;
 }
 .kelan{
    color: #3E5D58;
 }
+#greetingPhoto{
+}
+
+
+
+
 
 
 /** Nav Formatting **/
 header{
     position: sticky;
     top: 0;
-    backdrop-filter: blur(0.15rem);
-    background-color: var(--blurshit);
-    margin: 0 150;
+    backdrop-filter: blur(0.25rem);
+    background-color: #f9f9fb;
+    padding: 0.25rem
+
 }
 
 ul{
-
-padding-bottom: 20px;
-text-align: right;
+display: flex;
+justify-content: flex-end;
 }
 
 li{
-    display: inline;
+    display: flex;
+    justify-content: flex-end;
     font-size: 20px;
 }
 
 li a{
-    color: black;
+    color: var(--botanicalgreen);
     padding: 8px;
 
 }
@@ -55,5 +68,5 @@ text-decoration: none;
 }
 
 li a:visited{
-    color: lightblue;
+    color: var(--lightbotgreen);
 }
