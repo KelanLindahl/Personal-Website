@@ -6,7 +6,12 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background-image: src("style/images/possibleweb.png");
+    background-image: url(../style/images/background.svg);
+    aspect-ratio: 900/900;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .main{
