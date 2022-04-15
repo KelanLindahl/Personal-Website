@@ -26,6 +26,7 @@ padding-bottom: 2.5rem;
 }
 .greeting p{
     font-size: 1.5rem;
+    
 }
 
 #greetingTitle{
@@ -149,15 +150,38 @@ li a:visited{
 }
 
 @media screen and (min-width: 240px) and (max-width: 900px){
+    ul.navContainer{
+        justify-content: flex-start;
+    }
+    ul li.navContainer{
+        justify-content: flex-start;
+        font-size: 1.3rem;
+        line-height: 20px;
+    }
+    .navContainer li a{
+        padding: 10;
+    }
+    
+    h2{
+        font-size: 3.5rem;
+        text-align: left;
+        color: var(--botanicalgreen)
+    }
+    
+    #photo{
+        display: none;
+       }
+
     #greetingContainer{
         margin-left: 1%;
         display: flex;
         width: 45%;
         flex-wrap: wrap;
+        margin-bottom: 5%;
     }
     .greeting p{
         font-size: 1.2rem;
-        width: 50%;
+        width: 75%;
     }
     
     #greetingTitle{
@@ -173,12 +197,10 @@ li a:visited{
         width: 50%;
 
     }
-
-    h2{
-        font-size: 3.5rem;
-        text-align: left;
-        color: var(--botanicalgreen)
+    #experience1, #experience2, #experience3{
+        margin-left: 2%;
     }
+
     .projects{
         display: flex;
         align-items: baseline;
@@ -190,7 +212,5 @@ li a:visited{
         text-align: left;
         padding: 1%;
     }
-    #experience1, #experience2, #experience3{
-        margin-left: 2%;
-    }
+
 }
