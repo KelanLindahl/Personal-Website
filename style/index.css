@@ -6,11 +6,12 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background-image: url(../style/images/background.svg);
+    background-image: url(../style/images/backgroundLight.svg);
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-color: black;
 }
 
 .main{
@@ -117,9 +118,11 @@ margin-left: 25%;
 
 /** Nav Formatting **/
 header{
-    background-color: #f9f9fb;
+    position: sticky;
+    top: 0;
+    background-color: ghostwhite;
     padding: 0.25rem;
-    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+    box-shadow: 0 2px 2px -2px rgba(255, 255, 255, 0.3);
 
 }
 
@@ -133,9 +136,14 @@ justify-content: flex-end;
     justify-content: flex-end;
     font-size: xx-large;
     line-height: 35px;
-}
+ }
 
-.navContainer li a{
+ .navContainer i{
+    font-size: 36px;
+    line-height: 35px;
+ }
+
+.navContainer li a, i{
     color: var(--botanicalgreen);
     padding: 18;
 
@@ -147,14 +155,27 @@ text-decoration: none;
 li a:visited{
     color: var(--lightbotgreen);
 }
+/** Dark mode! **/
+.bodyDark{
+    background-image: url("images/backgroundDark.svg");
+    color: ghostwhite !important;
+}
+
+.projectDark{
+    background-color: #121212 !important;
+}
 
 /** SMALL SCREEN DISPLAY **/
 @media screen and (min-width: 240px) and (max-width: 900px){
+    body{
+    }
+
     header{
-        display: none;
+        
     }
     ul.navContainer{
         justify-content: flex-start;
+        padding-left: 0;
     }
     ul li.navContainer{
         justify-content: flex-start;
@@ -163,6 +184,12 @@ li a:visited{
     }
     .navContainer li a{
         padding: 10;
+    }
+    .navContainer i{
+        padding: 10;
+        justify-content: flex-start;
+        font-size: 1.2rem;
+        line-height: 20px;
     }
     
     h2{
@@ -214,5 +241,4 @@ li a:visited{
         text-align: left;
         padding: 5%;
     }
-
 }
