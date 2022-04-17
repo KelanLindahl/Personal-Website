@@ -4,17 +4,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <link rel="stylesheet" href="style/reset.css">
         <link rel="stylesheet" href="style/index.css">
+        <script src="js/main.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Kelan Lindahl</title>
         <link rel="icon" type="image/x-icon" href="style/images/favicon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <header class="navContainer">
+        <header id="head">
             <ul class="navContainer">
-                <li class="navContainer"><a href="index.html">Home</a></li>
+                <li class="navContainer"><i class="fa fa-moon-o" onclick="darkMode()"></i></a></li>
+                <li class="navContainer"><a href="index">Home</a></li>
                 <li class="navContainer"><a href="#projectContainer">Projects</a></li>
                 <li class="navContainer"><a href="#experience">Experience</a></li>
-                <li class="navContainer"><a href="about.html">About</a></li>
+                <li class="navContainer"><a href="about">About</a></li>
                 <li class="navContainer"><a href="https://www.linkedin.com/in/kelanlindahl/" class="fa fa-linkedin" class="d-inline" aria-hidden="true"></a></li>
                 <li class="navContainer"><a href="https://github.com/KelanLindahl" class="fa fa-github" aria-hidden="true"></a></li>
             </ul>
@@ -23,21 +26,22 @@
             <div id="greetingContainer" class="greeting">
                 <h1 id="greetingTitle">Hello! I'm <span class=kelan>Kelan.</span> </h1>
                 <div class="break"></div>
-                <p id="greetingParagraph" class="greeting">
-                    Thank you for visiting my website!<br/> 
-                    Excuse the appearance. It's currently under develpoment!<br/>
-                    I'm currently a senior at Wentworth&nbsp;Insitute&nbsp;of&nbsp;Technology.<br/>
-                    My anticipated graduation date is August 2022.<br/>
-                    Wanna learn more? Please look around!<br/>
-                </p>
+                <div id="greetingParagraph" class="greeting">
+                    <p>Thank you for visiting my website!</p>
+                    <p>Excuse the appearance. It's currently under develpoment!</p>
+                    <p>I'm currently a senior at Wentworth&nbsp;Insitute&nbsp;of&nbsp;Technology.</p>
+                    <p>My anticipated graduation date is August 2022.</p>
+                    <p>Wanna learn more? Please look around!</p>
+                </div>
                 <div id="photo">
                     <img src="style/images/possibleweb.png" id="greetingPhoto" alt="Kelan Lindahl holding a goat" width="500" length="500">
                 </div>
             </div>
-            <div class="projects" id ="projectContainer">
+            <div class="projects" id ="projectContainer" >
                 <h2 id="projectsTitle">Projects</h2>
                 <div class="project">
                     <h3>moodify.site</h3>
+                    <i class="fa-solid fa-moon"></i>
                     <p> 
                         Moodify is built using Spotify's web API to dynamically generate a unique playlist for each user. Playlist generation starts with the user inputting their current mood.
                         Once mood is selected, Moodify accesses the user's liked songs & creates a playlist of user's liked songs that are tagged with tags similiar to inputted mood.
