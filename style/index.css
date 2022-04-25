@@ -134,18 +134,18 @@ justify-content: flex-end;
  ul li.navContainer {
     display: flex;
     justify-content: flex-end;
-    font-size: xx-large;
+    font-size: 2.0rem;
     line-height: 35px;
  }
 
  .navContainer i{
-    font-size: 36px;
+    font-size: 2.5rem;
     line-height: 35px;
  }
 
 .navContainer li a, i{
     color: var(--botanicalgreen);
-    padding: 18;
+    padding: 1.25rem;
 
 }
 li a:link{
@@ -171,7 +171,6 @@ li a:visited{
     }
 
     header{
-        
     }
     ul.navContainer{
         justify-content: flex-start;
@@ -179,8 +178,8 @@ li a:visited{
     }
     ul li.navContainer{
         justify-content: flex-start;
-        font-size: 1.3rem;
-        line-height: 20px;
+        font-size: .75rem;
+        line-height: 15px;
     }
     .navContainer li a{
         padding: 10;
@@ -188,13 +187,13 @@ li a:visited{
     .navContainer i{
         padding: 10;
         justify-content: flex-start;
-        font-size: 1.2rem;
-        line-height: 20px;
+        font-size: .75rem;
+        line-height: 15px;
     }
     
     h2{
         font-size: 3.5rem;
-        text-align: left;
+        text-align: center;
         color: var(--botanicalgreen)
     }
     
@@ -205,8 +204,8 @@ li a:visited{
     #greetingContainer{
         margin-left: 1%;
         display: flex;
-        width: 45%;
-        flex-wrap: wrap;
+        width: 50%;
+        align-items: center;
         margin-bottom: 5%;
     }
     .greeting p{
@@ -232,13 +231,13 @@ li a:visited{
 
     .projects{
         display: flex;
-        align-items: baseline;
+        align-items: center;
         justify-content: center;
         flex-direction: column;
         width: 100%;
     }
     .project{
-        text-align: left;
+        text-align: center;
         padding: 5%;
     }
 }
