@@ -50,12 +50,12 @@ header{
 
 }
 
-ul.navContainer{
+.navContainer{
 display: flex;
 justify-content: flex-end;
 }
 
- ul li.navContainer {
+    a.navContainer {
     display: flex;
     justify-content: flex-end;
     font-size: xx-large;
@@ -67,24 +67,30 @@ justify-content: flex-end;
     line-height: 35px;
  }
 
-.navContainer li a, i{
+.navContainer a {
     color: var(--botanicalgreen);
     padding: 18;
-
+    display: flex;
+    justify-content: flex-end;
+    font-size: xx-large;
+    line-height: 35px;
 }
 
-li a:link{
+a:link{
 text-decoration: none;
 }
 
-li a:visited{
+a:visited{
     color: var(--lightbotgreen);
 }
 
-li a:active{
-text-decoration: underline;
+a:hover{
+font-size: 2.5rem;
 }
 
+#hamburger{
+    display: none;
+}
 
 /** Light Mode **/
 .bodyLight{
@@ -93,7 +99,7 @@ text-decoration: underline;
 }
 
 .projectLight{
-    background-color: ghostwhite;
+    background-color: ghostwhite !important;
 }
 
 /** Small Screen Formatting! **/
@@ -105,24 +111,26 @@ text-decoration: underline;
 #aboutPhoto{
     display: none;
 }
+    .navContainer a{display: none;}
+    .navContainer #hamburger{
+        float: right;
+        display: flex;
+    }
 
-    ul.navContainer{
-        justify-content: flex-start;
-        padding-left: 0;
+
+.navContainer.responsive {
+    display: flex;
+    flex-direction: column;
+}
+.navContainer.responsive a.icon{
+    position: absolute;
+    right: 0;
+    top: 0;
     }
-    ul li.navContainer{
-        justify-content: flex-start;
-        font-size: .75rem;
-        line-height: 15px;
+    .navContainer.responsive a{
+        float: none;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
     }
-    .navContainer li a{
-        padding: 10;
-    }
-    .navContainer i{
-        padding: 10;
-        justify-content: flex-start;
-        font-size: .75rem;
-        line-height: 15px;
-    }
-    
 }

@@ -126,40 +126,47 @@ header{
 
 }
 
-ul.navContainer{
+.navContainer{
 display: flex;
 justify-content: flex-end;
 }
 
- ul li.navContainer {
+a.navContainer {
     display: flex;
     justify-content: flex-end;
-    font-size: 2.0rem;
+    font-size: xx-large;
     line-height: 35px;
  }
 
  .navContainer i{
-    font-size: 2.5rem;
+    font-size: 36px;
     line-height: 35px;
  }
 
-.navContainer li a, i{
+.navContainer a {
     color: var(--botanicalgreen);
-    padding: 1.25rem;
-
+    padding: 18;
+    display: flex;
+    justify-content: flex-end;
+    font-size: xx-large;
+    line-height: 35px;
 }
 
-li a:link{
+a:link{
 text-decoration: none;
 }
 
-li a:visited{
+a:visited{
     color: var(--lightbotgreen);
 }
 
-li a:active, li a:hover, i:hover{
-    font-size: 2.5rem;
-    }
+a:hover{
+font-size: 2.5rem;
+}
+
+#hamburger{
+    display: none;
+}
 
     
 /** Light mode! **/
@@ -174,29 +181,30 @@ li a:active, li a:hover, i:hover{
 
 /** SMALL SCREEN DISPLAY **/
 @media screen and (min-width: 240px) and (max-width: 900px){
-    body{
+
+    .navContainer a{display: none;}
+    .navContainer #hamburger{
+        float: right;
+        display: flex;
     }
 
-    header{
+
+.navContainer.responsive {
+    display: flex;
+    flex-direction: column;
+}
+.navContainer.responsive a.icon{
+    position: absolute;
+    right: 0;
+    top: 0;
     }
-    ul.navContainer{
-        justify-content: flex-start;
-        padding-left: 0;
+    .navContainer.responsive a{
+        float: none;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
     }
-    ul li.navContainer{
-        justify-content: flex-start;
-        font-size: .75rem;
-        line-height: 15px;
-    }
-    .navContainer li a{
-        padding: 10;
-    }
-    .navContainer i{
-        padding: 10;
-        justify-content: flex-start;
-        font-size: .75rem;
-        line-height: 15px;
-    }
+
     
     h2{
         font-size: 3.5rem;
@@ -247,4 +255,5 @@ li a:active, li a:hover, i:hover{
         text-align: center;
         padding: 5%;
     }
+    
 }

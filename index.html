@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="style/reset.css">
         <link rel="stylesheet" href="style/index.css">
         <script src="js/lightMode.js"></script>
+        <script src="js/main.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Kelan Lindahl</title>
         <link rel="icon" type="image/x-icon" href="style/images/favicon.png">
@@ -12,15 +13,17 @@
     </head>
     <body>
         <header id="head">
-            <ul class="navContainer">
-                <li class="navContainer"><i class="fa fa-moon-o" onclick="lightModeToggler()" aria-hidden="true"></i></a></li>
-                <li class="navContainer"><a href="index">Home</a></li>
-                <li class="navContainer"><a href="#projectContainer">Projects</a></li>
-                <li class="navContainer"><a href="#experience">Experience</a></li>
-                <li class="navContainer"><a href="about">About</a></li>
-                <li class="navContainer"><a href="https://www.linkedin.com/in/kelanlindahl/" class="fa fa-linkedin" class="d-inline" aria-hidden="true"></a></li>
-                <li class="navContainer"><a href="https://github.com/KelanLindahl" class="fa fa-github" aria-hidden="true"></a></li>
-            </ul>
+            <div class="navContainer" id="navCont">
+                <a class="fa fa-moon-o" onclick="lightModeToggler()"></a>
+                <a href="index">Home</a>
+                <a href="index.html#projectContainer">Projects</a>
+                <a href="index.html#experience">Experience</a>
+                <a href="about">About</a>
+                <a href="https://www.linkedin.com/in/kelanlindahl/" class="fa fa-linkedin"
+                        class="d-inline" aria-hidden="true"></a>
+                <a href="https://github.com/KelanLindahl" class="fa fa-github" aria-hidden="true"></a>
+                <a id="hamburger" href="javascript:void(0);" class="icon" onclick="hamburger()"><i class="fa fa-bars"></i></a>
+            </div>
         </header>
         <section class="main">
             <div id="greetingContainer" class="greeting">
