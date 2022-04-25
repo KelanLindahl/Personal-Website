@@ -6,12 +6,12 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background-image: url(../style/images/backgroundLight.svg);
+    background-image: url("images/backgroundDark.svg");
+    color: white;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-color: black;
 }
 
 .main{
@@ -82,7 +82,7 @@ h2{
     margin-bottom: 25px;
     border:5px solid var(--botanicalgreen);
     border-radius: 12px;
-    background-color: ghostwhite;
+    background-color: #121212 !important;;
 }
 .project a{
     color: var(--botanicalgreen);
@@ -120,7 +120,7 @@ margin-left: 25%;
 header{
     position: sticky;
     top: 0;
-    background-color: ghostwhite;
+    background-color: #121212 !important;
     padding: 0.25rem;
     box-shadow: 0 2px 2px -2px rgba(255, 255, 255, 0.3);
 
@@ -148,6 +148,7 @@ justify-content: flex-end;
     padding: 1.25rem;
 
 }
+
 li a:link{
 text-decoration: none;
 }
@@ -155,14 +156,20 @@ text-decoration: none;
 li a:visited{
     color: var(--lightbotgreen);
 }
-/** Dark mode! **/
-.bodyDark{
-    background-image: url("images/backgroundDark.svg");
-    color: ghostwhite !important;
+
+li a:active, li a:hover, i:hover{
+    font-size: 2.5rem;
+    }
+
+    
+/** Light mode! **/
+.bodyLight{
+    background-image: url(../style/images/backgroundLight.svg);
+    color: black !important;
 }
 
-.projectDark{
-    background-color: #121212 !important;
+.projectLight{
+    background-color: ghostwhite !important;
 }
 
 /** SMALL SCREEN DISPLAY **/

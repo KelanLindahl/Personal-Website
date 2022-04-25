@@ -6,39 +6,45 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background-image: url(../style/images/backgroundLight.svg);
+    background-image: url("images/aboutDark.svg");
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    color: ghostwhite;
     background-color: black;
 }
 
 .aboutMain{
-    display: flex;
+    display: inline-block;
     padding: 10%;
 }
 .aboutMain h1{
+    display: inline-block;
     font-size: 2.5rem
 }
 .aboutMain p{
     margin-bottom: 1.5rem;
-
 }
-
+.aboutMain p, li{
+    font-weight: 500;
+}
+#aboutPhoto{
+    transform: translateY(25%);
+    float: right;
+}
 .aboutText{
     width: 50%;
-    padding-top: 10%;
+    padding-top: 5%;
     display: flex;
     flex-direction: column;
-    justify-content: right;
 }
 
 /** Nav Formatting**/
 header{
     position: sticky;
     top: 0;
-    background-color: ghostwhite;
+    background-color: #121212 !important;
     padding: 0.25rem;
     box-shadow: 0 2px 2px -2px rgba(255, 255, 255, 0.3);
 
@@ -66,6 +72,7 @@ justify-content: flex-end;
     padding: 18;
 
 }
+
 li a:link{
 text-decoration: none;
 }
@@ -74,12 +81,48 @@ li a:visited{
     color: var(--lightbotgreen);
 }
 
-/** Dark Mode **/
-.bodyDark{
-    background-image: url("images/backgroundDark.svg");
-    color: ghostwhite !important;
+li a:active{
+text-decoration: underline;
 }
 
-.projectDark{
-    background-color: #121212 !important;
+
+/** Light Mode **/
+.bodyLight{
+    background-image: url(../style/images/aboutLight.svg);
+    color: black;
+}
+
+.projectLight{
+    background-color: ghostwhite;
+}
+
+/** Small Screen Formatting! **/
+@media screen and (min-width: 240px) and (max-width: 1200px){
+.aboutText{
+    width: 100%;
+}
+
+#aboutPhoto{
+    display: none;
+}
+
+    ul.navContainer{
+        justify-content: flex-start;
+        padding-left: 0;
+    }
+    ul li.navContainer{
+        justify-content: flex-start;
+        font-size: .75rem;
+        line-height: 15px;
+    }
+    .navContainer li a{
+        padding: 10;
+    }
+    .navContainer i{
+        padding: 10;
+        justify-content: flex-start;
+        font-size: .75rem;
+        line-height: 15px;
+    }
+    
 }
